@@ -579,14 +579,14 @@ esim-ego-server/
 - Add translation keys for user-facing messages
 - Run `alembic upgrade head` after pulling new migrations
 
-### Custom Filters for Users & Admins
-The system supports **extensible filtering** on all list endpoints (users, orders, payments, etc.). Developers can contribute custom filter logic by extending the existing service-layer filter methods:
+### Build the User & Admin Frontends
+You can contribute by building frontend applications (mobile or web) that connect to this API. The server is fully API-driven — any client can consume it:
 
-- **User filters** — add new query parameters in `admin_control_routes` or `user_routes`, then implement the filter logic in `UserService` (e.g., filter by registration date range, order count, total spent, last login, etc.)
-- **Admin filters** — extend admin endpoints with custom role-based access controls, activity filters, or permission scopes in `AdminService`
-- **Order filters** — add custom status combinations, payment method filters, or date ranges in `OrderService`
+- **Admin Dashboard** — a Flutter app is available at [app-ego-dashboard](https://github.com/omermask/app-ego-dashboard). Contribute new screens, widgets, or features.
+- **User App** — build a customer-facing app (Flutter, React Native, or web) using the public endpoints (`/auth`, `/plans`, `/orders`, `/wallet`, etc.)
+- **New Admin Features** — add new admin screens or improve existing ones in the Flutter dashboard
 
-Filter logic lives in the **service layer** (`app/services/`), keeping routes thin and reusable. Simply add a new optional parameter to the existing list endpoint and implement the query logic in the corresponding service.
+The API is fully documented in [API.md](API.md) with all endpoints, request/response formats, and authentication details. Any HTTP client can integrate.
 
 ---
 

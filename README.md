@@ -582,9 +582,9 @@ esim-ego-server/
 ### Build the User & Admin Frontends
 You can contribute by building frontend applications (mobile or web) that connect to this API. The server is fully API-driven — any client can consume it:
 
-- **Admin Dashboard** — a Flutter app is available at [app-ego-dashboard](https://github.com/omermask/app-ego-dashboard). Contribute new screens, widgets, or features.
-- **User App** — build a customer-facing app (Flutter, React Native, or web) using the public endpoints (`/auth`, `/plans`, `/orders`, `/wallet`, etc.)
-- **New Admin Features** — add new admin screens or improve existing ones in the Flutter dashboard
+- **[Admin Dashboard](https://github.com/omermask/esim-ego-dashboard)** — A Flutter admin panel. Contribute new screens, widgets, or features.
+- **User App** — Build a customer-facing app (Flutter, React Native, or web) using the public endpoints (`/auth`, `/plans`, `/orders`, `/wallet`, etc.)
+- **New Admin Features** — Add new admin screens or improve existing ones in the Flutter dashboard
 
 The API is fully documented in [API.md](API.md) with all endpoints, request/response formats, and authentication details. Any HTTP client can integrate.
 
@@ -606,4 +606,4 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 - **Issues**: [GitHub Issues](https://github.com/omermask/esim-ego-server/issues)
 - **Documentation**: See [API.md](API.md) for endpoint details
-- **Admin Dashboard**: Available at [app-ego-dashboard](https://github.com/omermask/app-ego-dashboard) (Flutter)
+- **Admin Dashboard**: Available at [esim-ego-dashboard](https://github.com/omermask/esim-ego-dashboard) (Flutter)
